@@ -1,0 +1,34 @@
+GET http://localhost:5249/games
+
+###
+
+GET http://localhost:5249/games/1
+
+
+###
+POST http://localhost:5249/games
+Content-Type: application/json
+
+{
+    "name": "Witcher 3: Wild Hunt",
+    "genreId": 5,
+    "price": 59.99,
+    "releaseDate": "2023-01-01"
+}
+
+### 
+PUT http://localhost:5249/games/1
+Content-Type: application/json
+
+{
+    "name": "Titan Quest Anniversary Edition!",
+    "genre": "Action RPG",
+    "price": 39.99,
+    "releaseDate": "2016-08-31"
+}
+
+###
+DELETE http://localhost:5249/games/3
+
+###
+GET http://localhost:5249/genres
